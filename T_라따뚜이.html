@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <title>라따뚜이</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="user-scalable=no,initial-scale=1,maximum-scale=1"
+    />
+    <style>
+      body {
+        width: 1500px;
+        margin: 0px auto;
+        background-color: #2c2c4b;
+      }
+
+      .video-wrap {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+      }
+      .video-wrap iframe,
+      .video-wrap object,
+      .video-wrap embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .main1_a {
+        display: inline-block;
+        color: white;
+        margin-left: 60px;
+        margin-top: 35px;
+        width: 80px;
+        height: 80px;
+      }
+
+      iframe {
+        margin-top: 60px;
+      }
+
+      #left {
+        float: left;
+        width: 600px;
+      }
+
+      #right {
+        float: right;
+        width: 850px;
+        height: 250px;
+      }
+
+      #left2 {
+        float: left;
+        width: 600px;
+      }
+
+      p {
+        color: white;
+      }
+
+      @media screen and (max-width: 800px) {
+        body {
+          width: auto;
+        }
+        #left {
+          width: auto;
+          float: none;
+        }
+        #right {
+          width: auto;
+          float: none;
+        }
+        #right2 {
+          width: auto;
+          float: none;
+        }
+      }
+
+      .responsive-image {
+        width: 100%;
+        height: auto;
+        max-width: 1000px;
+      }
+
+      @media (max-width: 768px) {
+        .responsive-image {
+          margin-right: 20px;
+          margin-bottom: 15px;
+          max-width: 480px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/7/77/Disney_Plus_logo.svg"
+      alt="그림이 존재하지 않습니다."
+      style="width: 80px; height: 80px; float: left"
+    />
+
+    <p class="main1_a">
+      <a href="S_index.html" style="text-decoration: none; color: white">
+        <b>나가기</b></a
+      >
+    </p>
+
+    <img
+      src="T_img/카피바라.jpg"
+      alt="그림이 존재하지 않습니다."
+      style="width: 60px; height: 40px; float: right; margin-top: 25px"
+    />
+
+    <div class="video-wrap">
+      <iframe
+        width="1500"
+        height="550"
+        src="https://www.youtube.com/embed/-tNqfcZKn6k?si=oe0bxuxE81zpk2MA&autoplay=1&mute=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div id="left">
+      <a href="T_라따뚜이그림판.html">
+        <img
+          src="https://draco.pe.kr/wp-content/uploads/2012/02/2139745763_143b606a04_o.jpg"
+          alt="그림이 존재하지 않습니다."
+          style="width: 600px; height: 700px; float: left; margin-top: 30px"
+          class="responsive-image"
+        />
+      </a>
+      <div id="left2">
+        <p style="font-size: 1.5em">평점 : 88%</p>
+        <p style="font-size: 1.5em">장르 : 애니메이션, 코미디, 가족, 판타지</p>
+        <p style="font-size: 1.5em">재생시간 : 1시간 51분</p>
+        <p style="font-size: 1.5em">연령 등급 : ALL</p>
+        <p style="font-size: 1.5em">PRODUCTION COUNTRY : 미국</p>
+      </div>
+      <hr />
+    </div>
+    <div id="right">
+      <p style="font-size: 1.5em">
+        절대미각, 빠른 손놀림, 끓어 넘치는 열정의 소유자 레미. 프랑스 최고의
+        요리사를 꿈꾸는 그에게 단 한가지 약점이 있었으니, 바로 주방 퇴치대상
+        1호인 생쥐라는 것. 어느 날 하수구에서 길을 잃은 레미는 파리의 별
+        다섯개짜리 최고급 레스토랑에 떨어진다. 보글거리는 수프, 둑닥둑닥
+        도마소리, 향긋한 허브 내음에 식욕이 아닌 요리욕이 북받친 레미의 작은
+        심장은 콩닥콩닥 뛰기 시작한다. 끝내 주방으로 들어가는 레미는 요리에
+        열중하다 견습생 링귀니에게 딱 걸리고 만다. 해고위기에 처해있던 링귀니는
+        레미의 재능을 한눈에 알아보고 의기투합을 제안하는데...
+      </p>
+    </div>
+  </body>
+</html>

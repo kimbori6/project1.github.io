@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <style>
+      /* CSS 스타일 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 10%; /* 또는 다른 백분율 값을 적용해보세요 */
+    height: auto;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 15%; /* 또는 다른 백분율 값을 적용해보세요 */
+    height: auto;
+    margin-top: 15px;
+    margin-right: 0px;
+}
+
+/* 미디어 쿼리를 사용하여 화면 크기에 따른 스타일 조정 */
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 30%;
+    }
+
+    .icon {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 40%;
+    }
+
+    .icon {
+        width: 20%;
+    }
+}
+
+    body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+  }
+
+  .main1 {
+    background-attachment:fixed;
+    padding: 5px 10px;
+    width: 2100px;
+    height: 70px;
+    }
+    
+  .main1_a {
+        display: inline-block;
+        color: white;
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 80px;
+        height: 80px;
+    }
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 500px;
+  }
+  span {
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .game-info {
+  width: 500px;
+  float: left;
+  margin-left: 50px;
+  margin-top: -20px;
+  color: white;
+}
+
+.game-details {
+  width: 500px;
+  float: right; 
+  margin-right: 200px;
+  margin-top: -20px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+    img {
+      float: none;
+      margin: 0 auto;
+    }
+
+    .game-info,
+    .game-details {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    clear: both;
+  }
+  }
+  .youtubeWrap {
+			position: relative;
+			overflow: hidden;
+			width : 50%;
+			height : 0;
+			padding-bottom: 28.174%;
+			 margin : 0 auto;
+			
+		}
+
+       @media (max-width: 800px) { 
+			.youtubeWrap {
+				width : 100%;
+				padding-bottom: 56.25%;
+			}
+		}
+      .youtubeWrap iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+ 
+a {
+  text-decoration: none;
+}
+  </style>
+  </head>
+
+  <body style="background-color: black;">  
+    <div align-item="left"> 
+      <div class="header">
+        <div class="main1">
+        <img src="./H_img/NLogo.jpg" class="logo" />
+        <div class="main1_a">
+          <a href="Y_main.html">
+            <p style="color: white; float:left; margin-top:20px;"><b>홈</b></p>
+          </a>
+        </div>
+        </div>
+        <div class="header-icons">
+            <img src="./H_img/알림.png" class="icon" />
+            <img src="./H_img/카피바라.jpg" class="icon" />
+            <img src="./H_img/하단 표시.png" class="icon" />
+          </div>
+          </div>
+      </div>
+    </div>
+  <p align-item="middle">
+    <div class="youtubeWrap"><iframe
+      src="https://www.youtube.com/embed/45J4sMh0amc?autoplay=1&mute=1&controls=0&loop=1&modestbranding=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe></div>
+  </p>
+      <div align-item="center" style="float:left;margin-left:140px;">
+        <a href="H_피지컬그림판.html" target="_blank">
+      <img
+        src="https://i.namu.wiki/i/2kdJwjgwta7qXtCG2UyRBMaRoyYAmfvP5Xg4P9TY7YJbOKhigCGYYOIRgshDujUT7mi6ueroyEHej71LXvpfUQ.webp"
+        alt="피지컬100"
+        />
+      </a>
+    </div>
+    <div class="game-info">
+          <h3>1. 서열</h3>경쟁자들의 몸을 뜬 석고 토르소로 가득한 방. 그곳에 100인의 참가자가 차례로 입장한다. 곧이어 첫 번째 대결 과제가 소개된다.
+          <h3>2. 뺏기면 죽는다</h3>참가자들의 기본 능력치를 시험해 보는 사전 퀘스트. 다음 라운드에서는 두 명씩 짝을 이뤄 대결하는 일대일 매치가 이어지고, 대결에서 패하는 사람은 모두 집에 돌아가야 하는데.
+          <h3>3. 피하고 싶은 사람</h3>탈락하지 않고 살아남기 위한 싸움이 계속된다. 그런 가운데, 참가자들은 상대를 이기기 위해 자신의 육체적 한계를 돌파할 방법을 찾는다.
+          <h3>4. 언더독</h3>승자들은 서로를 축하하고 운동이라는 공통분모로 친목을 다진다. 곧이어 다음 라운드에 대비한 팀 정하기가 시작되는데. 과연 누가 가장 강력한 팀을 결성할 것인가?
+          <h3>5. 초대받지 않은 손님</h3>각 팀은 여러 단계로 이루어진 퀘스트에서 팀의 전략과 시너지, 힘을 겨룬다. 격렬한 대결을 거친 생존자들은 예상치 못한 반전을 마주하는데.
+        </div><div class="game-details">
+          <h3>6. '생'의 무게</h3>뜨겁게 달아오른 경쟁의 열기 속에 다음 라운드로 진출한 참가자들. 이번에는 새로운 연합이 필요한 퀘스트가 기다리고 있다.
+          <h3>7. 불가능의 가능성</h3>이어서 공개된 다음 퀘스트는 개인전. 과연 누가 혼자만의 싸움에서 살아남아 승리를 거둘 것인가?
+          <h3>8. 가혹한 형벌</h3>결승에 한 걸음 더 가까워진 생존자들. 최종 5인에 들기 위해 투지를 불태우며 혼신의 힘을 다해 싸운다.
+          <h3>9. 1/100</h3>만찬 자리에 함께한 결승 진출자들은 각자 지나온 삶의 여정에 관해 이야기를 나눈다. 마침내 결승 게임 종목들이 공개되는데, 게임이 진행될수록 난도는 점점 높아진다.
+        </div>
+  </body>
+</html>

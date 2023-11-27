@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #2c2c4b;
+}
+/* 상단바 */
+.main1 {
+  background-attachment: fixed;
+  padding: 5px 10px;
+  height: 80px;
+}
+
+.main1_a {
+  display: inline-block;
+  color: white;
+  margin-left: 60px;
+  margin-top: 27px;
+  width: 80px;
+  height: 80px;
+}
+
+.main1_b {
+  display: inline-block;
+  color: white;
+  margin-left: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.main1_c {
+  display: inline-block;
+  color: white;
+  margin-left: 10px;
+  width: 130px;
+  height: 80px;
+}
+/*영상부분*/
+#B {
+  text-align: center;
+  background-color: black;
+  box-shadow: 5px 5px 5px 5px;
+}
+.section .slidewrap .slidelist > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.section .slidewrap .slidelist > li > a {
+  display: block;
+  position: relative;
+}
+
+.section .slidewrap .slidelist > li > a > iframe {
+  max-width: 100%;
+  width: 100%;
+}
+.section .slidewrap {
+  text-align: center;
+}
+/* 슬라이드 */
+/* INPUT 가리기 */
+.section [id*="slide"] {
+  display: none;
+}
+
+/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+.section .slidewrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.section .slidelist {
+  white-space: nowrap;
+  font-size: 0;
+}
+.section .slidelist > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all 0.5s;
+}
+.section .slidelist > li > a {
+  display: block;
+  position: relative;
+}
+
+/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+.section .slide-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+.section .slide-control label {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  cursor: pointer;
+  background-color: white;
+}
+.section .slide-control .left {
+  left: 30px;
+  background: url("./S_imges/left.png") center center / 100% no-repeat;
+}
+
+.section .slide-control .right {
+  right: 30px;
+  background: url("./S_imges/right.png") center center / 100% no-repeat;
+}
+.section .slide-control [class*="control"] {
+  display: none;
+}
+
+/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(0%);
+}
+.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-100%);
+}
+.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-200%);
+}
+.section [id="slide04"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-300%);
+}
+.section [id="slide05"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-400%);
+}
+.section [id="slide06"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-500%);
+}
+
+/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+.section [id="slide01"]:checked ~ .slidewrap .control01 {
+  display: block;
+}
+.section [id="slide02"]:checked ~ .slidewrap .control02 {
+  display: block;
+}
+.section [id="slide03"]:checked ~ .slidewrap .control03 {
+  display: block;
+}
+.section [id="slide04"]:checked ~ .slidewrap .control04 {
+  display: block;
+}
+.section [id="slide05"]:checked ~ .slidewrap .control05 {
+  display: block;
+}
+.section [id="slide06"]:checked ~ .slidewrap .control06 {
+  display: block;
+}
+/* 로고 부분 */
+#C {
+  max-width: 1740px;
+  overflow: hidden;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* 아이템 사이에 공간을 만들기 위해 추가된 줄 */
+}
+
+.c1,
+.c2,
+.c3 {
+  flex: 1 1 30%; /* flex 속성을 조정했습니다. */
+  max-width: 300px;
+  margin: 10px;
+}
+
+/* 미디어 쿼리 추가 - 768px 이하의 화면 크기에 대한 스타일 */
+@media only screen and (max-width: 768px) {
+  .c1,
+  .c2,
+  .c3 {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+}
+
+.c1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px;
+}
+
+.c2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px;
+}
+
+.c3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px;
+}
+/* 영화작품 */
+#D {
+  overflow: hidden;
+  margin-top: 80px;
+  margin-left: 20px;
+  display: inline-block;
+}
+#D > p {
+  color: white;
+  margin-bottom: 5px;
+}

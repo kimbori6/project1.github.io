@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <title>엘리멘탈</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="user-scalable=no,initial-scale=1,maximum-scale=1"
+    />
+    <style>
+      body {
+        width: 1500px;
+        margin: 0px auto;
+        background-color: #2c2c4b;
+      }
+
+      .main1_a {
+        display: inline-block;
+        color: white;
+        margin-left: 60px;
+        margin-top: 35px;
+        width: 80px;
+        height: 80px;
+      }
+
+      .video-wrap {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+      }
+      .video-wrap iframe,
+      .video-wrap object,
+      .video-wrap embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      iframe {
+        margin-top: 60px;
+      }
+
+      #left {
+        float: left;
+        width: 600px;
+      }
+
+      #right {
+        float: right;
+        width: 850px;
+        height: 250px;
+      }
+
+      #left2 {
+        float: left;
+        width: 600px;
+      }
+      p {
+        color: white;
+      }
+
+      @media screen and (max-width: 800px) {
+        body {
+          width: auto;
+        }
+        #left {
+          width: auto;
+          float: none;
+        }
+        #right {
+          width: auto;
+          float: none;
+        }
+        #left2 {
+          width: auto;
+          float: none;
+        }
+        #right2 {
+          width: auto;
+          float: none;
+        }
+      }
+
+      .responsive-image {
+        width: 100%;
+        height: auto;
+        max-width: 1000px;
+      }
+
+      @media (max-width: 768px) {
+        .responsive-image {
+          margin-right: 20px;
+          margin-bottom: 15px;
+          max-width: 480px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/7/77/Disney_Plus_logo.svg"
+      alt="그림이 존재하지 않습니다."
+      style="width: 80px; height: 80px; float: left"
+    />
+
+    <p class="main1_a">
+      <a href="S_index.html" style="text-decoration: none; color: white">
+        <b>나가기</b></a
+      >
+    </p>
+    <img
+      src="T_img/카피바라.jpg"
+      alt="그림이 존재하지 않습니다."
+      style="width: 60px; height: 40px; float: right; margin-top: 25px"
+    />
+
+    <div class="video-wrap">
+      <iframe
+        width="1500"
+        height="550"
+        src="https://www.youtube.com/embed/BOqFRHCrN-k?si=yvQ7xxjQvV354IcN&autoplay=1&mute=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div id="left">
+      <a href="T_엘리멘탈그림판.html">
+        <img
+          src="https://i.namu.wiki/i/oif3Eig6-FYAmaC3xI0vH6bcNJCIc0bRfZbF1r_-wl_nRC-gHkH8PeKilJrvNkku8AYKh29Rx_uIJ-Us-EEJLg.webp"
+          alt="그림이 존재하지 않습니다."
+          style="width: 600px; height: 700px; float: left; margin-top: 30px"
+          class="responsive-image"
+        />
+      </a>
+      <div id="left2">
+        <p style="font-size: 1.5em">평점 : 84%</p>
+        <p style="font-size: 1.5em">
+          장르 : 코미디, 가족, 판타지, SF, 애니메이션, 드라마
+        </p>
+        <p style="font-size: 1.5em">재생시간 : 1시간 42분</p>
+        <p style="font-size: 1.5em">연령 등급 : ALL</p>
+        <p style="font-size: 1.5em">PRODUCTION COUNTRY : 미국</p>
+      </div>
+      <hr />
+    </div>
+    <div id="right">
+      <p style="font-size: 1.5em">
+        물, 불, 땅, 공기 등 세상을 이루고 있는 원소들을 의인화하여 이들이 함께
+        살아가고 있는 세계 ‘엘리멘트 시티’를 배경으로 불의 캐릭터 ‘앰버’와 물의
+        캐릭터 ‘웨이드’의 우정과 특별한 여행을 담은 영화
+      </p>
+    </div>
+  </body>
+</html>

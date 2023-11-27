@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <style>
+      /* CSS 스타일 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 10%; /* 또는 다른 백분율 값을 적용해보세요 */
+    height: auto;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 15%; /* 또는 다른 백분율 값을 적용해보세요 */
+    height: auto;
+    margin-top: 15px;
+    margin-right: 0px;
+}
+
+/* 미디어 쿼리를 사용하여 화면 크기에 따른 스타일 조정 */
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 30%;
+    }
+
+    .icon {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 40%;
+    }
+
+    .icon {
+        width: 20%;
+    }
+}
+
+    body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+  }
+
+  .main1 {
+    background-attachment:fixed;
+    padding: 5px 10px;
+    width: 2100px;
+    height: 70px;
+    }
+    
+  .main1_a {
+        display: inline-block;
+        color: white;
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 80px;
+        height: 80px;
+    }
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 500px;
+  }
+  span {
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .game-info {
+  width: 500px;
+  float: left;
+  margin-left: 50px;
+  margin-top: -20px;
+  color: white;
+}
+
+.game-details {
+  width: 500px;
+  float: right; 
+  margin-right: 200px;
+  margin-top: -20px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+    img {
+      float: none;
+      margin: 0 auto;
+    }
+
+    .game-info,
+    .game-details {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    clear: both;
+  }
+  }
+  .youtubeWrap {
+			position: relative;
+			overflow: hidden;
+			width : 50%;
+			height : 0;
+			padding-bottom: 28.174%;
+			 margin : 0 auto;
+			
+		}
+
+       @media (max-width: 800px) { 
+			.youtubeWrap {
+				width : 100%;
+				padding-bottom: 56.25%;
+			}
+		}
+      .youtubeWrap iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+ 
+a {
+  text-decoration: none;
+}
+  </style>
+  </head>
+
+  <body style="background-color: black;">  
+    <div align-item="left"> 
+    <div class="header">
+      <div class="main1">
+      <img src="./H_img/NLogo.jpg" class="logo" />
+      <div class="main1_a">
+        <a href="Y_main.html">
+          <p style="color: white; float:left; margin-top:20px;"><b>홈</b></p>
+        </a>
+      </div>
+      </div>
+      <div class="header-icons">
+          <img src="./H_img/알림.png" class="icon" />
+          <img src="./H_img/카피바라.jpg" class="icon" />
+          <img src="./H_img/하단 표시.png" class="icon" />
+        </div>
+        </div>
+    </div>
+  </div>
+  <p align-item="middle">
+    <div class="youtubeWrap"><iframe
+      src="https://www.youtube.com/embed/eOpran1Atls?autoplay=1&mute=1&controls=0&loop=1&modestbranding=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe></div>
+  </p>
+
+
+  <body style="background-color: black;">
+      <div align-item="center" style="float:left;margin-left:140px;">
+        <a href="H_종이의집그림판.html" target="_blank">
+      <img
+        src="https://i.namu.wiki/i/1VeOPWDqDOuSztJcZOrSTRvzyN8fUr0SD29JMxrZKglmZBy2xOlXiYr8lTLqE5pX-Qu2ilmdwxAr5UZaPzrXj737LLWU3DZ6NIHZSxSRcwfDb3TkAdZf4cJVC3J00FPy60qy4Sq9PMY5S4wSIvaVzA.webp"
+        alt="종이의집"
+        width="400px"
+        height="500px"
+        />
+      </a>
+    </div>
+    <div class="game-info">
+    <h3>1화</h3>사상 최대의 무장강도를 치밀하게 계획해 온 '교수'. 잃을것 없는 8인을 지휘하여 스페인 조폐국에 침투시킨다. 인질까지 잡았으니 이젠 독 안에 든 쥐가 될 차례.
+    <h3>2화</h3>인질 석방에 투입된 것은 협상가 라켈 무리요뿐만이 아니다. 정보부가 얼쩡거리는 이유는? 석방 협상이 긴박해지고, 싸움은 시작되었다. 숨겨둔 카드를 꺼내들때.
+    <h3>3화</h3>일부 멤버의 이미지가 유출되고 아르투로는 필사적으로 살길을 모색한다. 바에서 만난 남자를 의심하는 라켈. 순조롭던 계획이 틀어진 것은 삶이 늘 그렇듯 사랑 탓이었다.
+    <h3>4화</h3>라켈에게 개인적인 긴급상황이 발생한다. 총성을 들은 인질들은 겁에 질리고, 모스크바는 베를린의 명령을 이행한 사람이 아들임을 알게 된다. 열린 문은 투항의 신호인가?
+    <h3>5화</h3>의료진 진입이 허용된 틈을 타 경찰이 잠입한다. 지금껏 모든 걸 내다본 교수와 그보다 한 수 앞을 내다봐야 하는 라켈. 트로이의 목마는 누구의 차지가 될 것인가.
+    <h3>6화</h3>상태가 나빠지는 모니카. 리우는 뉴스 보도에 심기가 불편해지고, 교수는 계책이 통한 걸 즐긴다. 베를린이 규칙을 어기자, 도쿄는 교수에게 보고하라고 종용한다.
+    <h3>7화</h3>경찰이 단서를 잡고 한 멤버의 실수까지 더해져 정체가 드러나기 일보 직전. 좁혀지는 수사망의 한가운데 선 교수는 위기를 모면하려면 촌각을 다투며 기지를 발휘해야 한다.
+  </div><div class="game-details">
+    <h3>8화</h3>리우와 대화하는 앨리슨을 보고 다그치는 도쿄. 라켈은 언론의 호된 질타를 받고 벼랑 끝으로 몰린다. 놈들이 늘 미꾸라지처럼 빠져나가다니, 누군가 정보를 흘리는 걸까?
+    <h3>9화</h3>목격자의 진술을 막으려 전력질주하는 교수. 실명이 밝혀지고 중상모략 당한 베를린은 복수의 칼을 간다.
+    <h3>10화</h3>라켈은 인질들이 무사한지 확인하려 건물 안으로 진입한다. 한편, 나이로비는 앨리슨에게 조언을 해준다.
+    <h3>11화</h3>앙헬과 라켈은 서로 진실성을 의심한다. 모니카는 덴버의 의중을 떠보고 리우는 어려운 결정을 내려야 한다.
+    <h3>12화</h3>아르투로는 일부 인질들의 탈출을 모의한다. 교수는 강도 구상 아이디어를 준 사람을 밝힌다.
+    <h3>13화</h3>교수는 일촉즉발의 상황에서 라켈의 모친을 만난다. 조폐국 안의 멤버들은 인질들에게 선택을 제안한다. 돈인가 자유인가?
+  </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="T_styles.css" />
+    <title>스타워즈 깨어난 포스 그림판</title>
+  </head>
+
+  <div>
+    <img
+    src="https://upload.wikimedia.org/wikipedia/commons/7/77/Disney_Plus_logo.svg"
+    alt="그림이 존재하지 않습니다."
+    style="width: 80px; height: 80px; float: left;"
+  />
+
+  <a href="T_스타워즈.html"style="text-decoration: none; color: white">
+    <p class="main1_a"><b>나가기</b></p>
+  </a>
+  
+  <img
+    src="T_img/카피바라.jpg"
+    alt="그림이 존재하지 않습니다."
+    style="width: 60px; height: 40px; float: right; margin-top: 25px;"
+  />
+  </div>
+
+  <body>
+    <div align-left = left; style = "float:left;">
+      <img
+        src="https://i.namu.wiki/i/rIITXJk7vrnGR1Qxd0DP09pKTY5ot6QPr5Dvt2lyWKte3I3kTjeaKdbcKDXuRlvXBrUtClFvuX-LgABjVCyuXw.webp"
+        alt="그림이 존재하지 않습니다."
+        style="width: 700px; height: 700px; float: left; margin-right: 20px;"
+      />
+    
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="controls">
+      <div class="controls_range">
+        <input
+          type="range"
+          id="jsRange"
+          min="0.1"
+          max="10.0"
+          value="2.5"
+          step="0.1"
+        />
+      </div>
+      <div class="controls_btns">
+        <button id="jsMode">Fill</button>
+        <button id="jsSave">Save</button>
+      </div>
+      <div class="controls_colors" id="JSColors">
+        <div
+          class="controls_color jsColor"
+          style="background-color: black"
+        ></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color: white"
+        ></div>
+        <div class="controls_color jsColor" style="background-color: red"></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color: orange"
+        ></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color: yellow"
+        ></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color: green"
+        ></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color: blue"
+        ></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color: navy"
+        ></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color: purple"
+        ></div>
+      </div>
+    </div>
+    <script src="T_app.js"></script>
+  </body>
+</html>
